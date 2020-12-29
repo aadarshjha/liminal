@@ -1,30 +1,27 @@
 <script>
-	export let name;
+	import Header from "./layout/Header.svelte";
+	import marked from "../node_modules/marked/marked.min.js"
+	import { onMount } from "svelte";
+	// import "../node_modules/github-markdown-css/github-markdown.css"
+
+	onMount(async () => {
+		document.getElementById("content").innerHTML = marked("# Marked in the browser\n\nRendered by **marked**. \n <code>test this is a test that i smore code etcthat eixsts siasdj;flads lkf sadklfj ;laskdf asfjkls;fjs;kfj ;lskj f;ljs df;ljs ;lkfj ;sdlkj f;laksj df;klasj fdkjas f;kjsa kjf s;dklfj ;klj</code>");
+	}); 
+
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
 
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
+ 
 
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
 </style>
+
+<main class="markdown-body">
+	<Header />
+	<div id = "content">
+
+	</div>
+
+</main>
+
+

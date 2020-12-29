@@ -17,6 +17,8 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "github-markdown-css": "^4.0.0",
+    "marked": "^1.2.7",
     "sirv-cli": "^1.0.0"
   }
 }
