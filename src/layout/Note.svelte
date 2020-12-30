@@ -20,7 +20,6 @@
     import { javascript, typescript } from 'svelte-highlight/languages';
     import { github } from 'svelte-highlight/styles';
     import post from "../json/posts.json"; 
-    import { storeFE, idIncrement } from './store.js';
 
     $: code = `const add = (a: number, b: number) => a + b;`;
 
@@ -32,22 +31,22 @@
             let doc = document.getElementById("" + fetch["post_id"]); 
 
             for (let element of fetch['text']) {
-
                 let key = Object.keys(element)[0]; 
-
                 if(key == "header") {
                     doc.innerHTML += marked(element["header"]); 
                 } else if (key == "body") {
                     doc.innerHTML += marked(element["body"]); 
                 } else if (key == "code") {
-                    // insert a Highlight component of code. 
                     let code = element["code"];
-                    // console.log(code);  
-                    doc.append(`<Highlight language="{typescript}" {${code}} />`); 
+                    doc.innerHTML += `<Highlight language="{typescript}" {${code}} />`; 
+
                 } else if (key == "image") {
                     doc.innerHTML += marked(element["image"]); 
+                } else {
+                    doc.innerHTML += marked(element[key]); 
                 }
             }
+
         }
 	});
 </script>
@@ -61,6 +60,10 @@
 {#each post as card}
     <div class = "wrapper">
         <div id = {card["post_id"]}>
+            <!-- loading in through svelt
+            {#each post as ele}
+                <p></p>
+            {/each} -->
         </div>
         <div class = "meta">
             <p>{card["post_id"]}</p>
