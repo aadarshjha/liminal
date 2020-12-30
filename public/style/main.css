@@ -12,3 +12,7 @@ img {
     width: 50%;
     height: auto;
 }
+
+h1, p {
+    text-align: justify; 
+}
