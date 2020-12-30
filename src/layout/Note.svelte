@@ -42,7 +42,10 @@
 
         // get all the id's 
         for (let fetch of post) {
-            document.getElementById("" + fetch["post_id"]).innerHTML = marked(fetch['body']); 
+            let doc = document.getElementById("" + fetch["post_id"]); 
+            doc.innerHTML = marked(fetch['header']); 
+            // then we assert the tag. 
+            doc.innerHTML += marked(fetch['body']); 
         }
 	});
 
