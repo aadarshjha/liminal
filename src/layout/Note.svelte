@@ -13,24 +13,19 @@
 </style>
 
 <script>
-    // import "../../node_modules/highlight.js/styles/androidstudio.css";
     import marked from "../../node_modules/marked/marked.min.js"
     import { onMount } from "svelte";
     import { nanoid } from '../../node_modules/nanoid/nanoid.js'; 
-    // import hljs from "../../node_modules/highlight.js/lib/highlight.js"
-    // console.log(hljs)
-    // hljs.initHighlightingOnLoad(); 
-
     import { Highlight } from 'svelte-highlight';
     import { javascript, typescript } from 'svelte-highlight/languages';
     import { github } from 'svelte-highlight/styles';
+    import post from "../json/posts.json"; 
+    import { storeFE, idIncrement } from './store.js';
 
     $: code = `const add = (a: number, b: number) => a + b;`;
 
-    import post from "../json/posts.json"; 
-    console.log(nanoid()); 
-    // model.id = nanoid() //=> "V1StGXR8_Z5jdHi6B-myT"    
 
+    console.log(nanoid()); 
     onMount(async () => {
         for (let fetch of post) {
 
@@ -66,16 +61,16 @@
 {#each post as card}
     <div class = "wrapper">
         <div id = {card["post_id"]}>
-            <!--  -->
         </div>
         <div class = "meta">
             <p>{card["post_id"]}</p>
             <p id = "metadata">{card["meta"][0]}</p>
         </div>
     </div>
+    
 {/each}
 
 
-<!-- <Highlight language={typescript} `test` /> -->
+<!--  -->
 
 
