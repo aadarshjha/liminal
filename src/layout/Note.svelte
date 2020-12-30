@@ -13,10 +13,13 @@
 </style>
 
 <script>
+    import "../../node_modules/highlight.js/styles/androidstudio.css";
     import marked from "../../node_modules/marked/marked.min.js"
     import { onMount } from "svelte";
     import { nanoid } from '../../node_modules/nanoid/nanoid.js'; 
-    import highlight from "../../node_modules/highlight.js/lib/highlight.js"
+    import hljs from "../../node_modules/highlight.js/lib/highlight.js"
+    console.log(hljs)
+    hljs.initHighlightingOnLoad(); 
     import post from "../json/posts.json"; 
     console.log(nanoid()); 
     // model.id = nanoid() //=> "V1StGXR8_Z5jdHi6B-myT"    
@@ -44,4 +47,7 @@
         </div>
     </div>
 {/each}
+
+<pre><code class="html">This is somesort of test</code></pre>
+
 
