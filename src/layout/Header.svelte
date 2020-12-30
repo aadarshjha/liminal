@@ -1,7 +1,5 @@
 <style>
-    /* h1 {
-        color: red; 
-    } */
+
 </style>
 
 <script>
@@ -13,7 +11,8 @@
 
 </script>
 
-<h1>Test</h1>
+<h1>Hello.</h1> <img src="" alt="">
+<h3>This is a portfolio.</h3>
 
 <div id="content">
 
