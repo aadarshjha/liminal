@@ -10,6 +10,7 @@
 	#main {
 		/* background-color: red;  */
 		max-width: 520px;
+		/* min-width: 40%; */
 		margin: auto;
 		margin-top: 0px; 
 		padding-top: 0px;
