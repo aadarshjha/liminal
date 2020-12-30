@@ -4,12 +4,11 @@
         "tag": "",
         "text": 
         [
-            {
-                "header": "# A Tender History In Rust",
-                "body_1": "<p> It is what it is. And then some other stuff, like this stuff and others.</p>    ", 
-                "code": "Nah this is some code.",
-                "body_2": "<p> More test text.</p>"
-            }
+            {"header": "# A Tender History In Rust"},
+            {"image": "<img src =./res/blog/4iXCFI946xxLpvqhDKL7N/IMG_9713.jpg />"},
+            {"body": "<p> It is what it is. And then some other stuff, like this stuff and others.</p>    "}, 
+            {"code": "Nah this is some code."},
+            {"body": "<p> More test text.</p>"}
         ], 
         "meta": ["December 30th, 2020"]
     } 

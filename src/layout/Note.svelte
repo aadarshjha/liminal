@@ -32,14 +32,27 @@
     // model.id = nanoid() //=> "V1StGXR8_Z5jdHi6B-myT"    
 
     onMount(async () => {
-        // get all the id's 
         for (let fetch of post) {
+
             let doc = document.getElementById("" + fetch["post_id"]); 
 
+            for (let element of fetch['text']) {
 
-            doc.innerHTML = marked(fetch['header']); 
-            // then we assert the tag. 
-            doc.innerHTML += marked(fetch['body']); 
+                let key = Object.keys(element)[0]; 
+
+                if(key == "header") {
+                    doc.innerHTML += marked(element["header"]); 
+                } else if (key == "body") {
+                    doc.innerHTML += marked(element["body"]); 
+                } else if (key == "code") {
+                    // insert a Highlight component of code. 
+                    let code = element["code"];
+                    // console.log(code);  
+                    doc.append(`<Highlight language="{typescript}" {${code}} />`); 
+                } else if (key == "image") {
+                    doc.innerHTML += marked(element["image"]); 
+                }
+            }
         }
 	});
 </script>
@@ -53,7 +66,7 @@
 {#each post as card}
     <div class = "wrapper">
         <div id = {card["post_id"]}>
-            <!-- <Highlight language="{typescript}" {code} /> -->
+            <!--  -->
         </div>
         <div class = "meta">
             <p>{card["post_id"]}</p>
