@@ -1,25 +1,14 @@
 <style>
-    .card {
-        /* background-color: lightgreen;  */
-    }
-    h1 {
-        /* margin-top: px; */
-        text-align: justify;
-    }
-    .wrapper {
-        /* background-color: red;  */
-        /* display: flex; */
-        /* flex-direction: column; */
-
-    }
-
     .meta p {
-        /* background-color: blue; */
         display: flex; 
         justify-content: flex-end;
-
         margin-top: 0px;
         color: rgb(160,160,160); 
+    }
+
+    #metadata {
+        position: relative;
+        top: -10px; 
     }
 </style>
 
@@ -29,7 +18,7 @@
     import { nanoid } from '../../node_modules/nanoid/nanoid.js'; 
     import highlight from "../../node_modules/highlight.js/lib/highlight.js"
     import post from "../json/posts.json"; 
-    // console.log(nanoid()); 
+    console.log(nanoid()); 
     // model.id = nanoid() //=> "V1StGXR8_Z5jdHi6B-myT"    
 
     onMount(async () => {
@@ -51,7 +40,7 @@
         </div>
         <div class = "meta">
             <p>{card["post_id"]}</p>
-            <p>{card["meta"][0]}</p>
+            <p id = "metadata">{card["meta"][0]}</p>
         </div>
     </div>
 {/each}
