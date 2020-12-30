@@ -6,6 +6,24 @@
         /* margin-top: px; */
         text-align: justify;
     }
+    .wrapper {
+        /* background-color: red;  */
+        /* display: flex; */
+        /* flex-direction: column; */
+
+    }
+
+    .meta p {
+        /* background-color: blue; */
+        display: flex; 
+        justify-content: flex-end;
+
+        margin-top: 0px;
+        color: rgb(160,160,160); 
+    }
+    .meta {
+        /* background-color: red;  */
+    }
 </style>
 
 <script>
@@ -42,6 +60,7 @@
         </div>
         <div class = "meta">
             <p>{card["post_id"]}</p>
+            <p>{card["meta"][0]}</p>
         </div>
     </div>
 {/each}
