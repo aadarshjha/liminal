@@ -5,7 +5,7 @@
     h1 {
         /* margin-top: px; */
         text-align: justify;
-
+    }
 </style>
 
 <script>
@@ -16,7 +16,7 @@
 		// const res = await fetch(`https://jsonplaceholder.typicode.com/photos?_limit=20`);
         // photos = await res.json();
         // str = ""
-        document.getElementById('card').innerHTML = marked('# Marked in the browser \n <img src = "res/moon.png" alt="a photo." />');
+        document.getElementById('card').innerHTML = marked('# Marked in the browser \n <img src = "res/moon.png" alt="a photo." /> <p>This is a test this is a setup etasd;fka skfj ;aks </p> \n #### part 3 why croes die <code>hello world a;lksdf ksd laks fjaslfksdklfsd fadsfj dslk;f sflksdlf sdkfja ;lskf ;aksfkl</code>');
 	});
 
     
