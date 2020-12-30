@@ -9,7 +9,7 @@
         height: 40px;
         position: relative;
         top: 18px;
-        left: 15px;
+        left: 10px;
     }
 </style>
 
