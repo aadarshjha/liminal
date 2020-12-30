@@ -33,7 +33,6 @@
         display: flex; 
         flex-direction: row;
         justify-content: space-between;
-        /* background-color: red;  */
         align-items: center;
         height: 25px;
     }
@@ -70,12 +69,12 @@
 
 
 <Router url="{url}">
-	<nav>
-	  <Link to="/">Posts</Link>
-	  <Link to="about">About</Link>
-	  <Link to="links">Links</Link>
-	</nav>
-	<div>
+    <nav class = "nav">
+        <Link to="/"><h4>Posts</h4></Link>
+        <Link to="about"><h4>About</h4></Link>
+        <Link to="links"><h4>Links</h4></Link>
+    </nav>
+    <div>
       <Route path="about" component="{About}" />
       <Route path="about" component="{Links}" />
 	  <Route path="/"><Note /></Route>
