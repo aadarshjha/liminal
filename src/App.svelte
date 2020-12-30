@@ -10,18 +10,23 @@
 
 </script>
 
-
 <style>
- 
-
+	#content h1 {
+		color: red; 
+		background-color: red; 
+		font-size: 100x;
+	}
 </style>
 
-<main class="markdown-body">
+
+<main>
 	<Header />
 	<div id = "content">
 
 	</div>
 
 </main>
+
+
 
 
