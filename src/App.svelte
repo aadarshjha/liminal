@@ -2,9 +2,7 @@
 	import Header from "./layout/Header.svelte";
 	import "../public/style/main.css"; 
 	import Note from "./layout/Note.svelte"; 
-	import { onMount } from "svelte";
-	import { Router, Link, Route } from "svelte-routing";
-	
+
 </script>
 
 <style>
@@ -21,9 +19,11 @@
 	}
 </style>
 
+
+
+
 <div id = "main">
 	<Header />
-	<Note />
 </div>
 
 

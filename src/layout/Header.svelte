@@ -45,6 +45,11 @@
     import marked from "../../node_modules/marked/marked.min.js"
     import potentialEmojis from "../json/emojis.json"; 
     import { onMount } from "svelte";
+    import { Router, Link, Route } from "svelte-routing";
+    import Note from "./Note.svelte"; 
+    import About from "./About.svelte"; 
+    import Links from "./Links.svelte"; 
+    let url = ""; 
     // svelte routing SPA. 
 </script>
 
@@ -63,7 +68,22 @@
     </div>
 </div>
 
-<div class = "nav">
+
+<Router url="{url}">
+	<nav>
+	  <Link to="/">Posts</Link>
+	  <Link to="about">About</Link>
+	  <Link to="links">Links</Link>
+	</nav>
+	<div>
+      <Route path="about" component="{About}" />
+      <Route path="about" component="{Links}" />
+	  <Route path="/"><Note /></Route>
+	</div>
+  </Router>
+
+
+<!-- <div class = "nav">
     <div>
         <h4>Posts</h4>
     </div>
@@ -73,4 +93,4 @@
     <div>
         <h4>Links</h4>
     </div>
-</div>
+</div> -->
