@@ -34,6 +34,10 @@
                 let key = Object.keys(element)[0]; 
                 if(key == "header") {
                     doc.innerHTML += marked(element["header"]); 
+                } else if (key == "tag") {
+                    if(element[key] == "") {
+                        console.log("uncatgorized"); 
+                    }
                 } else if (key == "body") {
                     doc.innerHTML += marked(element["body"]); 
                 } else if (key == "code") {
@@ -41,6 +45,7 @@
                     doc.innerHTML += `<div class = "code">${code}</div>`; 
                 } else if (key == "image") {
                     doc.innerHTML += marked(element["image"]); 
+
                 } else {
                     doc.innerHTML += marked(element[key]); 
                 }
@@ -60,8 +65,8 @@
         <div id = {card["post_id"]}>
         </div>
         <div class = "meta">
-            <p>{card["post_id"]}</p>
-            <p id = "metadata">{card["meta"][0]}</p>
+            <!-- <p>{card["post_id"]}</p> -->
+            <p id = "">{card["meta"][0]}</p>
         </div>
     </div>
     
