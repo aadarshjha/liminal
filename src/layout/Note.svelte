@@ -38,15 +38,13 @@
                     doc.innerHTML += marked(element["body"]); 
                 } else if (key == "code") {
                     let code = element["code"];
-                    doc.innerHTML += `<Highlight language="{typescript}" {${code}} />`; 
-
+                    doc.innerHTML += `<div class = "code">${code}</div>`; 
                 } else if (key == "image") {
                     doc.innerHTML += marked(element["image"]); 
                 } else {
                     doc.innerHTML += marked(element[key]); 
                 }
             }
-
         }
 	});
 </script>
@@ -60,10 +58,6 @@
 {#each post as card}
     <div class = "wrapper">
         <div id = {card["post_id"]}>
-            <!-- loading in through svelt
-            {#each post as ele}
-                <p></p>
-            {/each} -->
         </div>
         <div class = "meta">
             <p>{card["post_id"]}</p>
