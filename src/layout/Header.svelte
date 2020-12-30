@@ -29,6 +29,15 @@
         font-size: 3em;
     }
 
+    .nav {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        /* background-color: red;  */
+        align-items: center;
+        height: 25px;
+    }
+
  
 </style>
 
@@ -36,6 +45,7 @@
     import marked from "../../node_modules/marked/marked.min.js"
     import potentialEmojis from "../json/emojis.json"; 
     import { onMount } from "svelte";
+    // svelte routing SPA. 
 </script>
 
 <div class = "header">
@@ -53,8 +63,14 @@
     </div>
 </div>
 
-
-
-<div id="content">
-
+<div class = "nav">
+    <div>
+        <h4>Posts</h4>
+    </div>
+    <div>
+        <h4>About</h4>
+    </div>
+    <div>
+        <h4>Links</h4>
+    </div>
 </div>

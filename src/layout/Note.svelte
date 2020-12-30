@@ -69,7 +69,6 @@
             <p id = "">{card["meta"][0]}</p>
         </div>
     </div>
-    
 {/each}
 
 

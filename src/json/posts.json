@@ -8,7 +8,22 @@
             {"image": "<img src =./res/blog/4iXCFI946xxLpvqhDKL7N/IMG_3416.jpg />",
              "caption": "The year is almost ending."
             },
-            {"body": "<p>Hello World</p>"}, 
+            {"body": "<p>This is my first post on my portfolio. The theme was somewhat inspired by Bear / Markdown.</p>"}, 
+            {"code": ""},
+            {"quote": ""}
+        ], 
+        "meta": ["December 30th, 2020"]
+    }, 
+    {
+        "post_id": "4iXCFI946xxLpvqhDKL7T",
+        "text": 
+        [
+            {"header": "# Hessdalen Lights"},
+            {"tag": ""},
+            {"image": "<img src =./res/blog/4iXCFI946xxLpvqhDKL7N/IMG_3416.jpg />",
+             "caption": "The year is almost ending."
+            },
+            {"body": "<p>This is my first post on my portfolio. The theme was somewhat inspired by Bear / Markdown.</p>"}, 
             {"code": ""},
             {"quote": ""}
         ], 
