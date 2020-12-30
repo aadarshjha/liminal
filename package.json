@@ -17,6 +17,7 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "github-markdown-css": "^4.0.0",
     "markdown-it": "^12.0.4",
     "marked": "^1.2.7",
