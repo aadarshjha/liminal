@@ -22,10 +22,13 @@
         flex-direction: row;
         justify-content: space-between;
         /* background-color: red;  */
+        /* height: 12%; */
+        height: 110px;
     }
     .large {
         font-size: 3em;
     }
+
  
 </style>
 
@@ -33,13 +36,6 @@
     import marked from "../../node_modules/marked/marked.min.js"
     import potentialEmojis from "../json/emojis.json"; 
     import { onMount } from "svelte";
-
-    onMount(async () => {
-		document.getElementById("content").innerHTML = marked("Marked in the browser\n\nRendered by **marked**. \n <code>test this is a test that i smore code etcthat eixsts siasdj;flads lkf sadklfj ;laskdf asfjkls;fjs;kfj ;lskj f;ljs df;ljs ;lkfj ;sdlkj f;laksj df;klasj fdkjas f;kjsa kjf s;dklfj ;klj</code>");
-    }); 
-
-    console.log(potentialEmojis); 
-
 </script>
 
 <div class = "header">

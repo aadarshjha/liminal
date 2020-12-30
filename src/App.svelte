@@ -15,6 +15,8 @@
 		margin-top: 0px; 
 		padding-top: 0px;
 		height: 100%;
+		padding-right: 10px;
+		padding-left: 10px; 
 	}
 </style>
 
