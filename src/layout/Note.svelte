@@ -5,12 +5,20 @@
         margin-top: 0px;
         color: rgb(160,160,160); 
     }
-
-    #metadata {
-        position: relative;
-        top: -10px; 
+    .meta {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: 'Consolas', monospace;
+        flex-wrap: wrap-reverse;
     }
+
 </style>
+
+<svelte:head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
+</svelte:head>
 
 <script>
     import marked from "../../node_modules/marked/marked.min.js"
@@ -61,9 +69,9 @@
 </script>
 
 <!-- code highlighting. -->
-<svelte:head>
+<!-- <svelte:head>
   {@html github}
-</svelte:head>
+</svelte:head> -->
 
 
 {#each post as card}
@@ -71,7 +79,7 @@
         <div id = {card["post_id"]}>
         </div>
         <div class = "meta">
-            <!-- <p>{card["post_id"]}</p> -->
+            <p>{card["post_id"]}</p>
             <p id = "">{card["meta"][0]}</p>
         </div>
     </div>
