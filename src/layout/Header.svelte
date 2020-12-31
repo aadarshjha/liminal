@@ -70,13 +70,13 @@
 <Router url="{url}">
     <nav class = "nav">
         <Link to="/"><h4>posts</h4></Link>
-        <Link to="links"><h4>imgs</h4></Link>
+        <Link to="imgs"><h4>imgs</h4></Link>
         <Link to="about"><h4>about</h4></Link>
         
     </nav>
     <div>
       <Route path="about" component="{About}" />
-      <Route path="about" component="{Imgs}" />
+      <Route path="imgs" component="{Imgs}" />
 	  <Route path="/"><Note /></Route>
 	</div>
   </Router>
