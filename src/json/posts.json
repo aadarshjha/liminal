@@ -5,8 +5,7 @@
         [
             {"header": "# Hessdalen Lights"},
             {"tag": ""},
-            {"image": "<img src =./res/blog/4iXCFI946xxLpvqhDKL7N/IMG_3416.jpg />",
-             "caption": "The year is almost ending."
+            {"image": "<img src =./res/blog/4iXCFI946xxLpvqhDKL7N/IMG_3416.jpg />"
             },
             {"body": "<p>This is my first post on my portfolio. The theme was somewhat inspired by Bear / Markdown.</p>"}, 
             {"code": ""},
@@ -18,7 +17,7 @@
         "post_id": "4iXCFI946xxLpvqhDKL7T",
         "text": 
         [
-            {"header": "# Hessdalen Lights"},
+            {"header": "# Dododooo"},
             {"tag": ""},
             {"image": "<img src =./res/blog/4iXCFI946xxLpvqhDKL7N/IMG_3416.jpg />",
              "caption": "The year is almost ending."

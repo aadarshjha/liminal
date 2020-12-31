@@ -47,7 +47,7 @@
     import { Router, Link, Route } from "svelte-routing";
     import Note from "./Note.svelte"; 
     import About from "./About.svelte"; 
-    import Links from "./Links.svelte"; 
+    import Imgs from "./Imgs.svelte"; 
     let url = ""; 
     // svelte routing SPA. 
 </script>
@@ -67,29 +67,15 @@
     </div>
 </div>
 
-
 <Router url="{url}">
     <nav class = "nav">
-        <Link to="/"><h4>Posts</h4></Link>
-        <Link to="about"><h4>About</h4></Link>
-        <Link to="links"><h4>Links</h4></Link>
+        <Link to="/"><h4>posts</h4></Link>
+        <Link to="about"><h4>about</h4></Link>
+        <Link to="links"><h4>imgs</h4></Link>
     </nav>
     <div>
       <Route path="about" component="{About}" />
-      <Route path="about" component="{Links}" />
+      <Route path="about" component="{Imgs}" />
 	  <Route path="/"><Note /></Route>
 	</div>
   </Router>
-
-
-<!-- <div class = "nav">
-    <div>
-        <h4>Posts</h4>
-    </div>
-    <div>
-        <h4>About</h4>
-    </div>
-    <div>
-        <h4>Links</h4>
-    </div>
-</div> -->
