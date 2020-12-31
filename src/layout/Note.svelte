@@ -9,8 +9,12 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        font-family: 'Consolas', monospace;
+        
         flex-wrap: wrap-reverse;
+    }
+
+    .postid {
+        font-family: 'Consolas', monospace;
     }
 
 </style>
@@ -79,7 +83,7 @@
         <div id = {card["post_id"]}>
         </div>
         <div class = "meta">
-            <p>{card["post_id"]}</p>
+            <p class = "postid">{card["post_id"]}</p>
             <p id = "">{card["meta"][0]}</p>
         </div>
     </div>
