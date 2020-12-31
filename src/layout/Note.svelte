@@ -39,7 +39,13 @@
                         console.log("uncatgorized"); 
                     }
                 } else if (key == "body") {
-                    doc.innerHTML += marked(element["body"]); 
+                    // parse together the entries: 
+                    let entrySummary = ""; 
+                    for (let entry of element["body"]) {
+                        entrySummary += entry; 
+                        // 
+                    }
+                    doc.innerHTML += marked(entrySummary);
                 } else if (key == "code") {
                     let code = element["code"];
                     doc.innerHTML += `<div class = "code">${code}</div>`; 

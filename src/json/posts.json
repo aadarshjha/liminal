@@ -4,28 +4,23 @@
         "text": 
         [
             {"header": "# Hessdalen Lights"},
+            {"quote": "> <em>The Hessdalen lights are of unknown origin. They appear both by day and by night, and seem to float through and above the valley. They are usually bright white, yellow or red and can appear above and below the horizon. The duration of the phenomenon may be a few seconds to well over an hour. Sometimes the lights move with enormous speed; at other times they seem to sway slowly back and forth. On yet other occasions, they hover in mid‑air.</em> — <a href=https://en.wikipedia.org/wiki/Hessdalen_lights>Source</a>"},
             {"tag": ""},
-            {"image": "<img src =./res/blog/4iXCFI946xxLpvqhDKL7N/IMG_3416.jpg />"
+            {"body": "<p>This is my first post. I decided to go with a pretty simple website and followed a <a href =https://bear.app/>Bear</a>-like / Markdown-inspired design. </p>"},
+            {"image": "<img src =./res/blog/4iXCFI946xxLpvqhDKL7N/lights.jpg />"
             },
-            {"body": "<p>This is my first post on my portfolio. The theme was somewhat inspired by Bear / Markdown.</p>"}, 
-            {"code": ""},
-            {"quote": ""}
+            {"body": 
+                [
+                    "<p>The Hessdalen Lights are atmospheric \"anomalies\" that have yet to be explained. ", 
+                    "It's also a <a href =https://open.spotify.com/track/0mq9yqCMnbP7OBio0mnVuq>song by Yves Tumor</a>, ",  
+                    "which was originally the insipration behind the title of this particular entry (I thought the name was mysterious and cool, lol). But it was nice to learn about the real ",
+                    "lights. I think the coolest part about them is that they have yet to be understood. It reminds me of the saying \"we know more about ",
+                    "space than we do about our own oceans\". Or like how there is more to the bottom of an iceberg than the top. ",
+                    "Or even, the invasive roots of a mushroom and the dark side of the moon. "
+                ]
+            }, 
+            {"code": ""}
         ], 
         "meta": ["December 30th, 2020"]
-    }, 
-    {
-        "post_id": "4iXCFI946xxLpvqhDKL7T",
-        "text": 
-        [
-            {"header": "# Dododooo"},
-            {"tag": ""},
-            {"image": "<img src =./res/blog/4iXCFI946xxLpvqhDKL7N/IMG_3416.jpg />",
-             "caption": "The year is almost ending."
-            },
-            {"body": "<p>This is my first post on my portfolio. The theme was somewhat inspired by Bear / Markdown.</p>"}, 
-            {"code": ""},
-            {"quote": ""}
-        ], 
-        "meta": ["December 30th, 2020"]
-    } 
+    }
 ]
