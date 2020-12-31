@@ -6,31 +6,21 @@
         margin-bottom: 10px; 
     }
     .gray  {
-        
+        color: rgb(160,160,160);
     }
 </style>
 
 <script>
-
+    import imgs from "../json/imgs.json"; 
 </script>
 
 
 <div class = "images">
-    <div class = "test">  
-        <img src="./res/imgs/IMG_5277.jpg" alt="">
-        <p><em>Walking home today after eating dinner.</em> | <span class = "gray">December 30, 2020</span></p>
-    </div>
-
-    <div class = "test">  
-        <img src="./res/imgs/IMG_5277.jpg" alt="">
-        <p>Walking home today after eating dinner.</p>
-    </div>
-
-    <div class = "test">  
-        <img src="./res/imgs/IMG_5277.jpg" alt="">
-        <p><em>Walking home today after eating dinner.</em></p>
-    </div>
-
-
+    {#each imgs as element}
+        <div class = "test">  
+            <img src={element['src']} alt="">
+            <p><em>{element['desc']}</em> | <span class = "gray">{element['date']}</span></p>
+        </div>
+    {/each}
 
 </div>
