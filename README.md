@@ -1,3 +1,4 @@
 # liminal
 
-a personal website. 
+a portfolio.
+
