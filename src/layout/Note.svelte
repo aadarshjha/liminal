@@ -72,12 +72,6 @@
 	});
 </script>
 
-<!-- code highlighting. -->
-<!-- <svelte:head>
-  {@html github}
-</svelte:head> -->
-
-
 {#each post as card}
     <div class = "wrapper">
         <div id = {card["post_id"]}>
@@ -89,7 +83,5 @@
     </div>
 {/each}
 
-
-<!--  -->
 
 
