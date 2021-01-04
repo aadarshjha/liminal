@@ -30,3 +30,8 @@ img {
 h1, p {
     text-align: justify; 
 }
+
+.center {
+    text-align: center;
+
+}
