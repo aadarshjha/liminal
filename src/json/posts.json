@@ -3,15 +3,19 @@
         "post_id": "OPrvJSMYaHTca6mGGwQDf",
         "text": 
         [
-            {"header": "# &Star Power"},
+            {"header": "# ... And Star Power"},
             {"quote": "> <em>One morning, as Gregor Samsa was waking up from anxious dreams, he discovered that in bed he had been changed into a monstrous vermin. </em>"},
+            {"body": "<p class=center>Or</p>"},
+            {"quote": "> <em>Someone must have been telling lies about Josef K., he knew he had done nothing wrong but, one morning, he was arrested.</em>"}, 
             {"tag": ""},
-            {"body": "<p>Hello World</p>"},
-            {"image": "<img class=bigger src =./res/blog/OPrvJSMYaHTca6mGGwQDf/test.jpg />"
-            },
-            {"code": ""}
+            {"body": "<p>Dealing with situations with no clear purpose, process, or ending characterizes most of the decisions we make. Maybe Kafka would argue that this is some sort of product of capitalism or inane bureaucratic structures, but I think this simply a part of human life. Our decisions ripple with short-term significance and long-term irrelevance; for a moment, the thing we debate seems so important and impactful, but several years, maybe even minutes, down the line its as though the confusion enticed by the same decision making was worth nothing at all. </p>"},
+            {"quote": "> <em>He lay on his armour-hard back and saw, as he lifted his head up a little, his brown, arched abdomen divided up into rigid bow-like sections.</em>"}, 
+            {"body": "<p>But still, we find ourselves in particular places or problems where there is no escape except to assert a decision — take charge of our actions. But we are bound by our circular logic and the apparent impossible exit of the problem: we consider what needs to be considered, and all the other things that may be impacted, and how that may ripple onwards, and so on. Our own autonomy sinks deeper into some convoluted run-away train of thought. We lose sight of our metrics of success — what was the point of the whole internal debate, anyway? Wait — what was the problem?</p>"},
+            {"quote": "> <em>\"Why don't I keep sleeping for a little while longer and forget all this foolishness,\" he thought. </em>"},
+            {"body": "In the end it really can be all “kafkaesque” — the dreary feeling that can force us to feel lost when coming up against something so big it seems impossible; something that seems beyond you and above all action. It doesn’t always have to be that way, though. Taking action can be as easy as making a decision, and as hard as making a decision. It just depends on you. "},
+            {"quote": "> <em>\"What now?\" Gregor asked himself and looked around him in the darkness.</em>"}
         ], 
-        "meta": ["December 30th, 2020"]
+        "meta": ["January 4th, 2020"]
     }, 
     {
         "post_id": "4iXCFI946xxLpvqhDKL7N",
